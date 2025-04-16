@@ -1,0 +1,223 @@
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    height: 100%;
+    position: relative;
+}
+
+html::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1vh solid rgb(171, 171, 171);
+    pointer-events: none;
+    z-index: 9999;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position: fixed;
+    top: 1vh;
+    left: 1vh;
+    right: 1vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 2vh 4vw;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 2.5vh;
+    font-weight: bold;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2vw;
+}
+
+header ul li a {
+    color: rgb(147, 147, 147);
+    text-decoration: none;
+    font-size: 2vh;
+    transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #000000;
+}
+
+header img {
+    width: 2.5vh;
+    height: 2.5vh;
+    object-fit: cover;
+}
+
+header .social-icons {
+    display: flex;
+    gap: 1vw;
+}
+main {
+    flex: 1;
+}
+.hero {
+    background-image: url('/img/lion.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    padding-left: 5vw;
+    color: rgb(255, 255, 255);
+}
+
+.hero-text {
+    max-width: 20vw;
+}
+
+.hero-text h1 {
+    font-size: 5vh;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 2.5vh;
+    margin-top: 2vh;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 3vh;
+    padding: 1.5vh 3vw;
+    font-size: 2vh;
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+    border: 0.3vh solid white;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.about-us {
+    padding: 4vh 4vw;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 3.5vh;
+    margin-bottom: 2vh;
+}
+
+.about-us p {
+    font-size: 1.5vh;
+    line-height: 1.6;
+    max-width: 40vw;
+    margin: 0 auto;
+    margin-bottom: 2vh;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.image-grid img {
+    object-fit: cover;
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    filter: grayscale(100%);
+}
+.testimonials {
+    padding: 4vh 8vw;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 3.5vh;
+    margin-bottom: 3vh;
+    color: #333;
+}
+
+.testimonial {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5%;
+    text-align: center;
+}
+
+.testimonial img {
+    width: 10vh;
+    height: 10vh;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2vh;
+}
+
+.testimonial p {
+    font-size: 1.5vh;
+    color: #555;
+    margin-bottom: 1vh;
+}
+
+.testimonial h3 {
+    font-size: 2vh;
+    color: #333;
+    font-weight: bold;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e7e7e7;
+    color: rgb(0, 0, 0);
+    padding: 2vh 4vw;
+    width: 100%;
+    box-sizing: border-box;
+}
+footer a {
+    font-size: 1.5vh;
+}
+
+footer img {
+    width: 2.5vh;
+    height: 2.5vh;
+    object-fit: cover;
+}
+
+footer .social-icons {
+    display: flex;
+    gap: 1vw;
+}
